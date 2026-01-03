@@ -1,1 +1,31 @@
-@import "tailwindcss";
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Custom IPS-Inspired Theme for umeshchandra.org */
+:root {
+    --ips-navy: #192A41;     /* Professional Authority */
+    --ips-gold: #B49B6E;     /* Honor and "Tiger" Legacy */
+    --ips-light: #F5F5F5;
+}
+
+/* Overriding Bootstrap Primary Classes */
+.bg-primary { background-color: var(--ips-navy) !important; }
+.btn-primary { 
+    background-color: var(--ips-navy); 
+    border-color: var(--ips-navy); 
+}
+.btn-outline-primary { 
+    color: var(--ips-navy); 
+    border-color: var(--ips-navy); 
+}
+
+/* Custom Accent Class */
+.text-gold { color: var(--ips-gold) !important; }
+.btn-accent {
+    background-color: var(--ips-gold);
+    color: white;
+    border: none;
+}
+.btn-accent:hover {
+    background-color: #937d54; /* Darker shade of the new gold for hover effect */
+    color: white;
+}

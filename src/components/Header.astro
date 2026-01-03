@@ -1,16 +1,20 @@
 ---
 // You can add props or script here if needed
+import Logo from '../assets/image.png';
 ---
-<header>
-    <h1>My Awesome Website</h1>
-    <!-- Header content like logo, site title, etc. -->
-</header>
-
-<style>
-    header {
-        background-color: #333;
-        color: white;
-        padding: 1rem;
-        text-align: center;
-    }
-</style>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">CHADALAVADA Chadalavada UMESH CHANDRA <span class="text-gold">I.P.S.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Biography</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">The Foundation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tributes</a></li>
+        <li class="nav-item"><a class="btn btn-accent ms-lg-3" href="#">Donate Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
