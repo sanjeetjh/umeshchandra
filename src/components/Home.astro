@@ -1,10 +1,72 @@
+---
+import { Image } from 'astro:assets';
+import MainPhoto from '../assets/MainPhoto.png';
+import StatueSmall from '../assets/statue-small.jpg';
+---
+
 <section class="py-5 bg-light border-bottom">
-  <div class="container text-center my-5">
-    <h1 class="display-4 fw-bold text-primary">A Legacy of Bravery</h1>
-    <p class="lead text-muted">Dedicated to the memory of Sri Umesh Chandra, IPS (1966–1999)</p>
-    <div class="mt-4">
-      <button class="btn btn-primary btn-lg px-4 me-md-2">Read His Story</button>
-      <button class="btn btn-outline-primary btn-lg px-4">Gallery</button>
+	<div class="container my-5">
+		<div class="row gx-5 justify-content-center">
+			<div class="container text-center my-5">
+				<h1 class="display-4 fw-bold text-primary">
+					A Legacy of Bravery
+				</h1>
+				<p class="lead text-muted">
+					Dedicated to the memory of Sri Chadalavada Umesh Chandra, IPS (1966–1999)
+				</p>
+				<div class="mt-4">
+					<a class="btn btn-primary btn-lg px-4 me-md-2" href="#intro">Read His Story</a>
+					<button class="btn btn-outline-primary btn-lg px-4">Gallery</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="py-5" id="intro">
+    <div class="container my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-3">
+                <Image class="img-fluid rounded-3 my-5" src={MainPhoto} alt="Umesh Chandra" />
+            </div>
+            <div class="col-lg-9">
+                <h2 class="fw-bolder">The Cuddapah Tiger</h2>
+                <p class="lead fw-normal text-muted mb-0">Umesh Chandra was undoubtedly the most reputed police officer in the history of Andhra Pradesh police. He was loved by the people and the police where ever he worked. He was severe on antisocial elements and was very affectionate to the people. He created tremors in the backbones of the naxalites and factionists by showing them, what police are capable of. In his tenure as SP of Cuddapah district, which was considered as second most troublesome district in India, he restored normal conditions within no time, with his extraordinary abilities. He was called cuddapah tiger by the people of Cuddapah.</p>
+            </div>
+        </div>
     </div>
-  </div>
+</section>
+
+<section class="py-5 bg-light" id="statue-tribute">
+    <div class="container my-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <h2 class="fw-bolder"><a href="/statue" class="text-dark text-decoration-none link-heading">A Tribute in Stone</a></h2>
+                <p class="lead fw-normal text-muted mb-0">Umesh Chandra's statue was unveiled on September 4, 2000 at Sanjiva Reddy Nagar Cross Roads, Hyderabad.</p>
+            </div>
+            <div class="col-lg-6">
+                <Image class="img-fluid rounded-3 my-5" src={StatueSmall} alt="Umesh Chandra Statue" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="fw-bolder text-center mb-5">High notes of a short, but, illustrious career:</h2>
+                <ul class="list-group list-group-flush fs-5">
+                    <li class="list-group-item">Umesh Chandra raised the standards of policing and administration for his fellow officers to emulate. He provided a strict, yet fair administration. He turned around the negative image the police had in the peoples minds.</li>
+                    <li class="list-group-item">Umesh Chandra was bold and daring in dealing with the naxalites. He relentlessly pursued the apprehension of extremists, naxalites and other anti-social elements. He planned and led all counter-terrorist operations himself.</li>
+                    <li class="list-group-item">Umesh Chandra was a exemplary police officer who maintained a very high degree of honesty, integrity and professionalism. Umesh Chandra set a very high standard for himself and encouraged his fellow police officers to attain and excel these standards. The Vedic scriptures say that a saint's words follow his actions. This was very true of Umesh Chandra.</li>
+                    <li class="list-group-item">Umesh Chandra raised the morale of the police force where ever he went. He instilled a sense of pride and confidence in the police.</li>
+                    <li class="list-group-item">Umesh Chandra truly cared about the fellow human being. His humane nature made him an instant favorite of the common man. He did not limit himself to police work alone. He immersed himself in truly solving the real problems faced by the people.</li>
+                    <li class="list-group-item">Umesh Chandra was adored like God by both the common man and the police in all the districts he worked. Umesh Chandra evoked a great sense of loyalty and admiration of the police force as well as the common man.</li>
+                    <li class="list-group-item">Umesh Chandra looked after the well-being of all police officials working with him. He helped police families in times of need and supported them when police personnel were injured.</li>
+                    <li class="list-group-item">Election time usually is marked by violence leading to murder and mayhem. In all the districts Umesh Chandra served, election time violence became a thing of the past.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>

@@ -19,5 +19,27 @@ import '../styles/global.css';
 		<!-- <Menu /> -->
 		<slot />
 		<Footer />
+
+		<a href="#" id="goToTopBtn" title="Go to top">&uarr;</a>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+		<script>
+			const goToTopBtn = document.getElementById('goToTopBtn');
+
+			if (goToTopBtn) {
+				window.onscroll = function() {
+					if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+						goToTopBtn.style.display = "block";
+					} else {
+						goToTopBtn.style.display = "none";
+					}
+				};
+
+				goToTopBtn.addEventListener("click", function(e) {
+					e.preventDefault();
+					window.scrollTo({ top: 0, behavior: 'smooth' });
+				});
+			}
+		</script>
 	</body>
 </html>

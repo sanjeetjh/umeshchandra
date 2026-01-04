@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import Statue from '../assets/statue.jpg';
+---
+
+<Layout>
+  <section class="py-5">
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 class="display-4 fw-bold text-primary mb-4">A Tribute in Stone</h1>
+          <p class="lead text-muted">LOCATION: Sanjiva Reddy Nagar Cross Roads, Hyderabad, India</p>
+          <Image class="img-fluid rounded-3 my-5" src={Statue} alt="Umesh Chandra Statue" />
+          <p class="text-muted fs-5">
+            The statue was unveiled on September 4, 2000, by the Chief Minister of the Government of Andhra Pradesh, Hon. Sri Narra Chandrababu Naidu, on the anniversary of Umesh Chandra's assassination.
+          </p>
+          <p class="text-muted fs-5">
+            On this day, a website, a book of letters, and a cassette of songs eulogising Umesh Chandra's life were also published. The statue stands as a timeless reminder of his courage, integrity, and unwavering dedication to the people. It has become a landmark and a source of inspiration for many, symbolizing the fight against corruption and injustice.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
