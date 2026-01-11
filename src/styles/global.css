@@ -56,3 +56,24 @@ body {
 #goToTopBtn:hover {
     background-color: var(--ips-gold);
 }
+
+/* Avatar helper for person/information tiles */
+.avatar {
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* Education logo helper (circle, fixed size) */
+.edu-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+}

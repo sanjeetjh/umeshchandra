@@ -1,0 +1,178 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import hps_logo from '../assets/hps_logo.png';
+import nizam_logo from '../assets/nizamwhitelogo.jpg';
+import osmania_logo from '../assets/Osmania_University_Logo.png';
+---
+
+<Layout>
+  <section class="py-5">
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h1 class="display-4 fw-bold text-primary mb-4 text-center">Personal Details</h1>
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Date of Birth</h5>
+              <div class="d-flex align-items-start">
+                <div class="bg-primary text-light avatar me-3">U</div>
+                <div>
+                  <h6 class="mb-0"><strong>Born</strong></h6>
+                  <div class="text-muted small">July 29, 1966</div>
+                  <p class="mb-0 mt-2">Birth date recorded in public family records.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Native Place</h5>
+              <div class="d-flex align-items-start">
+                <div class="bg-primary text-light avatar me-3">P</div>
+                <div>
+                  <h6 class="mb-0"><strong>Pedapudi</strong></h6>
+                  <div class="text-muted small">Guntur (dist), Andhra Pradesh</div>
+                  <p class="mb-0 mt-2">Hometown and ancestral village.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Family</h5>
+              <!-- Polished LinkedIn-style family list -->
+              <div class="d-flex align-items-start mb-3">
+                <div class="bg-primary rounded-circle text-light d-flex align-items-center justify-content-center me-3" style="width:56px;height:56px;font-weight:700">CU</div>
+                <div>
+                  <h6 class="mb-0"><strong>Chadalavada Umamaheshwara Rao</strong></h6>
+                  <div class="text-muted small">Grandfather • Justice Party Leader • Former Tenali Taluk Board President</div>
+                  <p class="mb-0 mt-2">A community leader known for public service and local governance.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <div class="bg-primary rounded-circle text-light d-flex align-items-center justify-content-center me-3" style="width:56px;height:56px;font-weight:700">TJ</div>
+                <div>
+                  <h6 class="mb-0"><strong>Tummala Jaganmohan Rao</strong></h6>
+                  <div class="text-muted small">Maternal Grandfather • Landlord & Businessman</div>
+                  <p class="mb-0 mt-2">Prominent local entrepreneur with strong ties to the agricultural community.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <div class="bg-primary rounded-circle text-light d-flex align-items-center justify-content-center me-3" style="width:56px;height:56px;font-weight:700">CV</div>
+                <div>
+                  <h6 class="mb-0"><strong>Chadalavada Venugopal Rao</strong></h6>
+                  <div class="text-muted small">Father • Retd. Allwyn Service Manager</div>
+                  <p class="mb-0 mt-2">Long-serving technical manager with a background in service operations.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <div class="bg-primary rounded-circle text-light d-flex align-items-center justify-content-center me-3" style="width:56px;height:56px;font-weight:700">NR</div>
+                <div>
+                  <h6 class="mb-0"><strong>Chadalavada Naga Rani</strong></h6>
+                  <div class="text-muted small">Wife • B.B.M • R.D.O (trainee)</div>
+                  <p class="mb-0 mt-2">Administrative professional with experience in regional development.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <div class="bg-primary rounded-circle text-light d-flex align-items-center justify-content-center me-3" style="width:56px;height:56px;font-weight:700">BM</div>
+                <div>
+                  <h6 class="mb-0"><strong>Chadalavada Bharat Mohan Chandra</strong></h6>
+                  <div class="text-muted small">Son • Software Engineer • U.S.A.</div>
+                  <p class="mb-0 mt-2">Works in software engineering with experience in distributed systems.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start mb-3">
+                <div class="bg-primary rounded-circle text-light d-flex align-items-center justify-content-center me-3" style="width:56px;height:56px;font-weight:700">SC</div>
+                <div>
+                  <h6 class="mb-0"><strong>Chadalavada Satish Chandra</strong></h6>
+                  <div class="text-muted small">Brother • Software Engineer • Singapore</div>
+                  <p class="mb-0 mt-2">Experienced in international tech operations and team leadership.</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start">
+                <div class="bg-primary rounded-circle text-light d-flex align-items-center justify-content-center me-3" style="width:56px;height:56px;font-weight:700">RK</div>
+                <div>
+                  <h6 class="mb-0"><strong>Ravi Kavita</strong></h6>
+                  <div class="text-muted small">Sister • Software Engineer • U.S.A.</div>
+                  <p class="mb-0 mt-2">Works across cloud-based platforms and software delivery.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Education</h5>
+                <!-- Education entries with logo + initials fallback -->
+                <div class="d-flex mb-3 align-items-start">
+                  <Image src={hps_logo} alt="Hyderabad Public School logo" class="edu-logo me-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex'" />
+                  <div class="avatar bg-primary text-light me-3" style="display:none">H</div>
+                  <div>
+                    <h6 class="mb-1"><strong>Hyderabad Public School, Begumpet</strong></h6>
+                    <div class="text-muted small">Schooling • 1972 — 1984 • Hyderabad, India</div>
+                    <p class="mb-0 mt-2">Completed primary and secondary education, fostering a strong academic foundation.</p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="d-flex mb-3 align-items-start">
+                  <Image src={nizam_logo} alt="Nizam College logo" class="edu-logo me-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex'" />
+                  <div class="avatar bg-primary text-light me-3" style="display:none">N</div>
+                  <div>
+                    <h6 class="mb-1"><strong>Nizam College, Hyderabad</strong></h6>
+                    <div class="text-muted small">B.A. (Math, Economics, Statistics) • 1984 — 1987 • Hyderabad, India</div>
+                    <p class="mb-0 mt-2">Undergraduate studies in Statistics and Economics.</p>
+                  </div>
+                </div>
+
+                <hr />
+
+                <div class="d-flex align-items-start">
+                  <Image src={osmania_logo} alt="Osmania University logo" class="edu-logo me-3" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex'" />
+                  <div class="avatar bg-primary text-light me-3" style="display:none">O</div>
+                  <div>
+                    <h6 class="mb-1"><strong>Osmania University, Hyderabad</strong></h6>
+                    <div class="text-muted small">M.A. (Economics) • 1987 — 1989 • Hyderabad, India</div>
+                    <p class="mb-0 mt-2">Specialized in Analytical Economics; master's thesis focused on instrumental methods.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Awards</h5>
+              <div class="d-flex align-items-start">
+                <div class="bg-primary text-light avatar me-3">T</div>
+                <div>
+                  <h6 class="mb-0"><strong>Gallantry Award</strong></h6>
+                  <div class="text-muted small">Courage & devotion to duty (Posthumous)</div>
+                  <p class="mb-0 mt-2">Recognized for exceptional bravery in the line of duty.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-primary">Career</h5>
+              <div class="d-flex align-items-start">
+                <div class="bg-primary text-light avatar me-3">IP</div>
+                <div>
+                  <h6 class="mb-0"><strong>Indian Police Service</strong></h6>
+                  <div class="text-muted small">1991 Batch</div>
+                  <p class="mb-0 mt-2">Assistant Superintendent → Superintendent of Police across multiple districts (1992–1999).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
