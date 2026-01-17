@@ -1,6 +1,5 @@
 ---
-import englishPDF from '../assets/english.pdf';
-import teluguPDF from '../assets/telugu.pdf';
+import bookCover from '../assets/bookcover.jpg';
 const letters = [
   {
     title: "A letter from a common citizen of Cuddapah",
@@ -19,8 +18,9 @@ To read entire book and its cover page is included, and has the following cover 
   {
     title: "Read book online",
     description: ` 
-          <a href="/umeshchandra${englishPDF}" target="_blank" rel="noopener noreferrer">Read the book (English PDF)</a>
-          <a href="/umeshchandra${teluguPDF}" target="_blank" rel="noopener noreferrer">Read the book (Telugu PDF)</a>
+          <img src="${bookCover.src}" alt="Letters to Umesh Chandra Book Cover" class="img-fluid mb-3"/>
+          <a href="https://www.umeshchandra.org/Letters/english.pdf" target="_blank" rel="noopener noreferrer">Read the book (English PDF)</a>
+          <a href="https://www.umeshchandra.org/Letters/telugu.pdf" target="_blank" rel="noopener noreferrer">Read the book (Telugu PDF)</a>
       `}
 ];
 ---
