@@ -1,0 +1,42 @@
+---
+const lifeEvents = [
+  {
+    title: "Childhood, early school and family",
+    description: "Umesh Chandra was born on March 29, 1966. He was a bright and studious child, known for his intelligence and helpful nature. He excelled in his studies and was always eager to learn new things. His family was a great source of support and encouragement for him."
+  },
+  {
+    title: "High school, college and university",
+    description: "He continued to excel in his academics throughout his high school and college. He was a popular student, known for his leadership qualities and his willingness to help his peers. He graduated with a degree in science from Osmania University."
+  },
+  {
+    title: "Family and friends",
+    description: "Umesh Chandra was a loving son, a caring brother, and a loyal friend. He was always there for his family and friends, and they knew they could always count on him for support and guidance. He was a role model for many, and his memory continues to inspire them."
+  },
+  {
+    title: "I.P.S Career",
+    description: "Umesh Chandra joined the Indian Police Service (I.P.S) in 1991. He was known for his honesty, integrity, and his commitment to justice. He took on many challenging assignments and was successful in curbing crime and maintaining law and order. He was a brave and fearless officer who was not afraid to take on the most dangerous criminals. He was awarded the Prime Minister's medal for life-saving and the President's medal for gallantry for his bravery."
+  },
+  {
+    title: "Umesh Chandra: Martyr and Legend",
+    description: "Umesh Chandra was assassinated by naxalites on September 4, 1999. He was just 33 years old. His death was a great loss to the nation, but his legacy continues to live on. He is remembered as a martyr who sacrificed his life for the country. He is a legend who continues to inspire millions of people to this day."
+  }
+];
+---
+
+<section class="py-5">
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="display-4 fw-bold text-primary mb-4 text-center">Life of Umesh Chandra</h1>
+        {lifeEvents.map(event => (
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-primary">{event.title}</h5>
+              <p class="card-text">{event.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
