@@ -1,0 +1,44 @@
+---
+import englishPDF from '../assets/english.pdf';
+import teluguPDF from '../assets/telugu.pdf';
+const letters = [
+  {
+    title: "A letter from a common citizen of Cuddapah",
+    description: `Umesh Chandra received a number of letters from people of all walks of life when he was the S.P. of Cuddapah and Karimnagar. Umesh Chandra was accessible to the common man with genuine grievances.
+
+Many of these letters represent an outpouring of love, affection, admiration and adoration for his work in the district. Several others show indignance at the trumped up charges and political pressure brought to bear on Umesh Chandra and the police by vested interests. Most of these letters were written by the common man with little education, who were aroused to write simple yet emotionally filled letters.
+
+These letters also give a true picture of situation in Cuddapah before and after he took over as the Superintendent of Police.
+`
+  },
+  {
+    title: "Umesh Chandra & his Admirers",
+    description: `Umesh Chandra received numerous letters. Due to space constraints, Umesh Chandra's father, Sri Venugopal Rao published some of these letters in the form of a book entitled:
+To read entire book and its cover page is included, and has the following cover page. use below link`
+  },
+  {
+    title: "Read book online",
+    description: ` 
+          <a href={englishPDF} target="_blank" rel="noopener noreferrer">Read the book (English PDF)</a>
+          <a href={teluguPDF} target="_blank" rel="noopener noreferrer">Read the book (Telugu PDF)</a>
+      `}
+];
+---
+
+<section class="py-5">
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="display-4 fw-bold text-primary mb-4 text-center">Letters to Umesh Chandra</h1>
+        {letters.map(letter => (
+          <div class="card shadow-sm mb-4">
+            <div class="card-body">
+              <h5 class="card-title text-primary">{letter.title}</h5>
+              <p class="card-text" style="white-space: pre-wrap;" set:html={letter.description}></p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
