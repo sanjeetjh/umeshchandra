@@ -13,11 +13,126 @@ import Logo from '../assets/image.png';
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="/umeshchandra/perdetails">Personal Details</a></li>
-        <li class="nav-item"><a class="nav-link" href="/umeshchandra/achievements">Career Highlights</a></li>
-        <li class="nav-item"><a class="nav-link" href="/umeshchandra/life">Life Details</a></li>
-        <li class="nav-item"><a class="nav-link" href="/umeshchandra/about">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/umeshchandra/life/" id="navbarDropdownLife" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Life
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownLife">
+            <li><a class="dropdown-item" href="/umeshchandra/life/childhood/">Childhood</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/life/schooling-university/">Schooling & University</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/life/family-friends/">Family & Friends</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/life/ips-journey/">IPS Journey</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/life/martyr-legacy/">Martyr & Legacy</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/umeshchandra/career/" id="navbarDropdownCareer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Career
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownCareer">
+            <li><a class="dropdown-item" href="/umeshchandra/career/highlights/">Highlights</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/career/timeline/">Timeline</a></li>
+            <li class="nav-item dropdown">
+                <a class="dropdown-item dropdown-toggle" href="/umeshchandra/career/postings/" id="navbarDropdownPostings" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Postings
+                </a>
+                <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdownPostings">
+                    <li><a class="dropdown-item" href="/umeshchandra/career/postings/warangal/">Warangal</a></li>
+                    <li><a class="dropdown-item" href="/umeshchandra/career/postings/cuddapah/">Cuddapah</a></li>
+                    <li><a class="dropdown-item" href="/umeshchandra/career/postings/karimnagar/">Karimnagar</a></li>
+                    <li><a class="dropdown-item" href="/umeshchandra/career/postings/aig/">AIG</a></li>
+                </ul>
+            </li>
+            <li><a class="dropdown-item" href="/umeshchandra/career/farewell/">Farewell</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/umeshchandra/media/" id="navbarDropdownMedia" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Media
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMedia">
+            <li class="nav-item dropdown">
+                <a class="dropdown-item dropdown-toggle" href="/umeshchandra/media/photo-gallery/" id="navbarDropdownPhotoGallery" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Photo Gallery
+                </a>
+                <ul class="dropdown-menu submenu" aria-labelledby="navbarDropdownPhotoGallery">
+                    <li><a class="dropdown-item" href="/umeshchandra/media/photo-gallery/childhood/">Childhood</a></li>
+                    <li><a class="dropdown-item" href="/umeshchandra/media/photo-gallery/university/">University</a></li>
+                    <li><a class="dropdown-item" href="/umeshchandra/media/photo-gallery/family/">Family</a></li>
+                    <li><a class="dropdown-item" href="/umeshchandra/media/photo-gallery/ips-career/">IPS & Career</a></li>
+                    <li><a class="dropdown-item" href="/umeshchandra/media/photo-gallery/press-tragedy/">Press & Tragedy</a></li>
+                </ul>
+            </li>
+            <li><a class="dropdown-item" href="/umeshchandra/media/videos/">Videos</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/media/audio/">Audio (Songs)</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/media/documents/">Documents</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/umeshchandra/letters/" id="navbarDropdownLetters" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Letters
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownLetters">
+            <li><a class="dropdown-item" href="/umeshchandra/letters/letters-english/">Letters – English</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/letters/letters-telugu/">Letters – Telugu</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/letters/selected-excerpts/">Selected Excerpts</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/umeshchandra/trust/" id="navbarDropdownTrust" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Trust
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownTrust">
+            <li><a class="dropdown-item" href="/umeshchandra/trust/trust-overview/">Trust Overview</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/trust/objectives-activities/">Objectives & Activities</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/trust/trust-deed-excerpt/">Trust Deed (Excerpt)</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/trust/donate/">Donate</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/umeshchandra/readers-views/" id="navbarDropdownReadersViews" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Readers’ Views
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownReadersViews">
+            <li><a class="dropdown-item" href="/umeshchandra/readers-views/read-tributes/">Read Tributes</a></li>
+            <li><a class="dropdown-item" href="/umeshchandra/readers-views/submit-tribute/">Submit a Tribute</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+    // make it as accordion for smaller screens
+    if (window.innerWidth < 992) {
+
+        // close all inner dropdowns when parent is closed
+        document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+            everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                // after dropdown is hidden, then find all submenus
+                this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+                    // hide every submenu as well
+                    everysubmenu.style.display = 'none';
+                });
+            })
+        });
+
+        document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+            element.addEventListener('click', function (e) {
+                let nextEl = this.nextElementSibling;
+                if(nextEl && nextEl.classList.contains('submenu')) {	
+                    // prevent opening link if link needs to open dropdown
+                    e.preventDefault();
+                    if(nextEl.style.display == 'block'){
+                        nextEl.style.display = 'none';
+                    } else {
+                        nextEl.style.display = 'block';
+                    }
+                }
+            });
+        })
+    }
+}); 
+</script>

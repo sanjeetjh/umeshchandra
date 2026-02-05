@@ -35,6 +35,8 @@
 
 body {
     padding-top: 70px; /* Adjust this value based on the navbar height */
+    background-image: url('../assets/web.jpg');
+    background-repeat: repeat;
 }
 
 #goToTopBtn {
@@ -76,4 +78,38 @@ body {
     border-radius: 50%;
     object-fit: cover;
     display: inline-block;
+}
+
+.dropdown-menu .dropdown-toggle::after {
+    display: none;
+}
+.dropdown-menu .dropdown-menu {
+    margin-left: 0;
+    margin-right: 0;
+}
+.dropdown-menu li {
+    position: relative;
+}
+.dropdown-menu .dropdown-menu {
+    position: absolute;
+    left: 100%;
+    top: -7px;
+}
+
+@media (min-width: 992px) {
+    .dropdown-menu .dropdown-toggle:after {
+        border: none;
+        content: '▸';
+        vertical-align: 1px;
+        margin-left: .255em;
+    }
+
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dropdown-menu li:hover > .dropdown-menu {
+        display: block;
+    }
 }

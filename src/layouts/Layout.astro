@@ -1,6 +1,5 @@
 ---
 import Header from '../components/Header.astro';
-import Menu from '../components/Menu.astro';
 import Footer from '../components/Footer.astro';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/global.css';
@@ -17,10 +16,11 @@ import '../styles/global.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>Chadalavada Umesh Chandra: A Hero's Life</title>
 	</head>
-	<body class="flex flex-col min-h-screen bg-yellow-500">
+	<body class="flex flex-col min-h-screen">
 		<Header />
-		<!-- <Menu /> -->
-		<slot />
+		<main class="flex-grow">
+			<slot />
+		</main>
 		<Footer />
 
 		<a href="#" id="goToTopBtn" title="Go to top">&uarr;</a>
