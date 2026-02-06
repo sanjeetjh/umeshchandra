@@ -1,12 +1,40 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
+import HpsLogo from '../../assets/hps_logo.png';
+import OsmaniaLogo from '../../assets/Osmania_University_Logo.png';
 ---
 
 <Layout>
   <main>
     <div class="container">
       <h1>Schooling & University</h1>
-      <p>This page will contain information about the schooling and university life of Umesh Chandra.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Hyderabad Public School, Begumpet</h2>
+          <p class="text-lg">
+            Umesh Chandra graduated from Hyderabad Public School, Begumpet. He was an exceptional student and earned gold medals in Statistics, Economics, and Telugu.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <Image src={HpsLogo} alt="Hyderabad Public School Logo" class="w-48 h-48 object-contain" />
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-12">
+        <div class="flex justify-center">
+          <Image src={OsmaniaLogo} alt="Osmania University Logo" class="w-48 h-48 object-contain" />
+        </div>
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Nizam College & Osmania University</h2>
+          <p class="text-lg">
+            He pursued his Bachelor of Arts (B.A.) from Nizam College, affiliated to Osmania University, majoring in Mathematics, Economics, and Statistics. He graduated with top honors and was awarded a University gold medal.
+          </p>
+          <p class="text-lg mt-4">
+            Later, he completed his Master of Arts (M.A.) in Economics from the Arts College, Osmania University. He once again graduated with top honors, securing gold medals in Economics and Mathematics, and a University gold medal.
+          </p>
+        </div>
+      </div>
     </div>
   </main>
 </Layout>

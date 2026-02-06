@@ -1,12 +1,39 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
+import MainPhoto from '../../assets/MainPhoto.png';
 ---
 
 <Layout>
   <main>
     <div class="container">
       <h1>IPS Journey</h1>
-      <p>This page will contain information about the IPS journey of Umesh Chandra.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <Image src={MainPhoto} alt="Umesh Chandra" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-8">
+          <p class="lead">
+            Umesh Chandra joined the Indian Police Service in 1991. His career was marked by his integrity, bravery, and unwavering commitment to justice. He was known for his effective and people-friendly policing.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <h2 class="text-2xl font-bold mb-4">Postings</h2>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Assistant Superintendent of Police, Warangal:</strong> October 1992 - October 1994</li>
+          <li class="list-group-item"><strong>Assistant Superintendent of Police, Pulivendula:</strong> November 1994 - February 1995</li>
+          <li class="list-group-item"><strong>Officer on Special Duty, Warangal</strong></li>
+          <li class="list-group-item"><strong>Superintendent of Police, Cuddapah:</strong> June 1995 - June 1997</li>
+          <li class="list-group-item"><strong>Superintendent of Police, Karimnagar:</strong> June 1997 - April 1998</li>
+          <li class="list-group-item"><strong>AIG (Welfare and Sports):</strong> November 1998 - September 1999</li>
+        </ul>
+      </div>
+
+      <p class="mt-5 text-lg">
+        He was assassinated on September 4, 1999, but his legacy of courage and selfless service continues to inspire.
+      </p>
     </div>
   </main>
 </Layout>

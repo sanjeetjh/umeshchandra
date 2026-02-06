@@ -1,12 +1,44 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
+import StatueSmall from '../../assets/statue-small.jpg';
 ---
 
 <Layout>
   <main>
     <div class="container">
       <h1>Martyr & Legacy</h1>
-      <p>This page will contain information about the martyrdom and legacy of Umesh Chandra.</p>
+
+      <div class="my-5">
+        <h2 class="text-2xl font-bold mb-4">Martyrdom</h2>
+        <p class="text-lg">
+          On September 4, 1999, Umesh Chandra was assassinated by four Naxalites at a traffic signal in Hyderabad. His driver and gunman were also killed in the attack. Unarmed, he fought back bravely before being shot. His martyrdom sent shockwaves across the state and left a void in the police force.
+        </p>
+      </div>
+
+      <div class="my-5">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h2 class="text-2xl font-bold mb-4">A Lasting Legacy</h2>
+            <p class="text-lg">
+              Umesh Chandra's legacy is one of courage, integrity, and selfless service. He was known as the "Tiger of Police" for his fearless approach to law enforcement, especially during his tenure as SP of Cuddapah district, where he restored normal conditions in a region considered one of the most troublesome in India. He is remembered for his people-friendly policing and for restoring normalcy in troubled areas.
+            </p>
+            <p class="text-lg mt-4">
+              He raised the standards of policing and administration, providing a strict, yet fair administration that turned around the negative image the police had in the people's minds. He was bold and daring in dealing with naxalites, relentlessly pursuing and leading all counter-terrorist operations himself. He set a very high standard of honesty, integrity, and professionalism for himself and encouraged his fellow officers to attain and excel.
+            </p>
+            <p class="text-lg mt-4">
+              Umesh Chandra truly cared about the fellow human being. His humane nature made him an instant favorite of the common man. He did not limit himself to police work alone and immersed himself in truly solving the real problems faced by the people. He was adored by both the common man and the police in all the districts he worked. His actions instilled a sense of pride and confidence in the police force. In all the districts Umesh Chandra served, election time violence became a thing of the past.
+            </p>
+            <p class="text-lg mt-4">
+              A trust was formed in his memory to continue his work of service to society. His life and work continue to inspire young police officers and the youth of India. A statue in his honor was unveiled on September 4, 2000 at Sanjiva Reddy Nagar Cross Roads, Hyderabad.
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <Image src={StatueSmall} alt="Umesh Chandra Statue" class="img-fluid rounded" />
+            <p class="text-muted mt-2">Statue erected in his honor.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </Layout>
