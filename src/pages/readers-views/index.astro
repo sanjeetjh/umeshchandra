@@ -5,8 +5,29 @@ import Layout from '../../layouts/Layout.astro';
 <Layout>
   <main>
     <div class="container">
-      <h1>Readers' Views</h1>
-      <p>This is the hub page for the Readers' Views section.</p>
+      <h1 class="text-gold">Readers' Views</h1>
+      <p>This section is dedicated to the thoughts and tributes from our readers. We invite you to read the moving tributes shared by others and to submit your own to honor the memory of Mr. Umesh Chandra.</p>
+      
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-gold">Read Tributes</h5>
+              <p class="card-text">Read the heartfelt tributes and messages submitted by people who were inspired by his life and work.</p>
+              <a href="/readers-views/read-tributes" class="btn btn-primary">Read Tributes</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title text-gold">Submit a Tribute</h5>
+              <p class="card-text">Share your own thoughts, memories, or tribute to Mr. Umesh Chandra. Your message will be a valuable addition to this collective memorial.</p>
+              <a href="/readers-views/submit-tribute" class="btn btn-primary">Submit a Tribute</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </Layout>

@@ -5,8 +5,26 @@ import Layout from '../../layouts/Layout.astro';
 <Layout>
   <main>
     <div class="container">
-      <h1>Submit a Tribute</h1>
-      <p>This page will contain a form to submit a tribute.</p>
+      <h1 class="text-gold">Submit a Tribute</h1>
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="location" class="form-label">Your Location (e.g., City, Country)</label>
+              <input type="text" class="form-control" id="location">
+            </div>
+            <div class="mb-3">
+              <label for="tribute" class="form-label">Your Tribute</label>
+              <textarea class="form-control" id="tribute" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
   </main>
 </Layout>
