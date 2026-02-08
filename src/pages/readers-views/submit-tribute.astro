@@ -8,18 +8,23 @@ import Layout from '../../layouts/Layout.astro';
       <h1 class="text-gold">Submit a Tribute</h1>
       <div class="card">
         <div class="card-body">
-          <form>
+          <form action="https://api.staticforms.dev/submit" method="POST">
+            <!-- Your API Key (replace with your actual key) -->
+            <input type="hidden" name="apiKey" value="sf_m0j98h34hb6078e2hj8jlclh">
+            <!-- Add this field and hide it with CSS -->
+            <input type="text" name="honeypot" style="display:none">
+            <input type="hidden" name="redirectTo" value="https://sanjeetjh.github.io/umeshchandra/readers-views/thanks">
             <div class="mb-3">
               <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" required>
+              <input type="text" class="form-control" id="name" required name="name">
             </div>
             <div class="mb-3">
               <label for="location" class="form-label">Your Location (e.g., City, Country)</label>
-              <input type="text" class="form-control" id="location">
+              <input type="text" class="form-control" id="location" name="location">
             </div>
             <div class="mb-3">
               <label for="tribute" class="form-label">Your Tribute</label>
-              <textarea class="form-control" id="tribute" rows="5" required></textarea>
+              <textarea class="form-control" id="tribute" rows="5" required name="tribute"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
