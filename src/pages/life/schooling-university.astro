@@ -3,6 +3,13 @@ import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import HpsLogo from '../../assets/hps_logo.png';
 import OsmaniaLogo from '../../assets/Osmania_University_Logo.png';
+import ba1 from '../../assets/Photos/college/ba1.jpg';
+import goldmedal1 from '../../assets/Photos/college/goldmedal1.jpg';
+import goldmedal2 from '../../assets/Photos/college/goldmedal2.jpg';
+import goldmedal3 from '../../assets/Photos/college/goldmedal3.jpg';
+import goldmedalntr from '../../assets/Photos/college/goldmedalntr.jpg';
+import ICSinterview from '../../assets/Photos/college/ICSinterview.jpg';
+import ma1 from '../../assets/Photos/college/ma1.jpg';
 ---
 
 <Layout>
@@ -34,7 +41,50 @@ import OsmaniaLogo from '../../assets/Osmania_University_Logo.png';
             Later, he completed his Master of Arts (M.A.) in Economics from the Arts College, Osmania University. He once again graduated with top honors, securing gold medals in Economics and Mathematics, and a University gold medal.
           </p>
         </div>
-      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
+        <div class="card">
+            <Image src={ba1} alt="BA" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">BA</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={goldmedal1} alt="Gold Medal" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Gold Medal</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={goldmedal2} alt="Gold Medal 2" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Gold Medal 2</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={goldmedal3} alt="Gold Medal 3" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Gold Medal 3</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={goldmedalntr} alt="Gold Medal NTR" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Gold Medal NTR</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={ICSinterview} alt="ICS Interview" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">ICS Interview</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={ma1} alt="MA" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">MA</p>
+            </div>
+        </div>
+    </div>
     </div>
   </main>
 </Layout>

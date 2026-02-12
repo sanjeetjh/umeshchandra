@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import Statue from '../../assets/statue.jpg';
+import StatueSmall from '../../assets/statue-small.jpg';
 ---
 
 <Layout>
@@ -35,6 +36,8 @@ import Statue from '../../assets/statue.jpg';
           </div>
           <div class="col-md-4 text-center">
             <Image src={Statue} alt="Umesh Chandra Statue" class="img-fluid rounded" />
+            <p class="text-muted mt-2">Statue erected in his honor.</p>
+            <Image src={StatueSmall} alt="Umesh Chandra Statue" class="img-fluid rounded mt-3" />
             <p class="text-muted mt-2">Statue erected in his honor.</p>
           </div>
         </div>

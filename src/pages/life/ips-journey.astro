@@ -2,6 +2,11 @@
 import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import MainPhoto from '../../assets/MainPhoto.png';
+import NPAtraining from '../../assets/Photos/N.P.A/NPAtraining.jpg';
+import NPAtraining2 from '../../assets/Photos/N.P.A/NPAtraining2.jpg';
+import atmussouri from '../../assets/Photos/mussori/atmussouri.jpg';
+import CStraining from '../../assets/Photos/mussori/CStraining.jpg';
+import Mussouritour from '../../assets/Photos/mussori/Mussouritour.jpg';
 ---
 
 <Layout>
@@ -34,6 +39,38 @@ import MainPhoto from '../../assets/MainPhoto.png';
       <p class="mt-5 text-lg">
         He was assassinated on September 4, 1999, but his legacy of courage and selfless service continues to inspire.
       </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
+        <div class="card">
+          <Image src={NPAtraining} alt="NPA Training" class="w-full h-auto rounded-lg" />
+          <div class="card-body">
+            <p class="card-text">NPA Training</p>
+          </div>
+        </div>
+        <div class="card">
+          <Image src={NPAtraining2} alt="NPA Training 2" class="w-full h-auto rounded-lg" />
+          <div class="card-body">
+            <p class="card-text">NPA Training 2</p>
+          </div>
+        </div>
+        <div class="card">
+          <Image src={atmussouri} alt="At Mussouri" class="w-full h-auto rounded-lg" />
+          <div class="card-body">
+            <p class="card-text">At Mussouri</p>
+          </div>
+        </div>
+        <div class="card">
+          <Image src={CStraining} alt="CS Training" class="w-full h-auto rounded-lg" />
+          <div class="card-body">
+            <p class="card-text">CS Training</p>
+          </div>
+        </div>
+        <div class="card">
+          <Image src={Mussouritour} alt="Mussouri Tour" class="w-full h-auto rounded-lg" />
+          <div class="card-body">
+            <p class="card-text">Mussouri Tour</p>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </Layout>

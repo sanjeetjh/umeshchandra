@@ -1,5 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import aftertirupati from '../../assets/Photos/family/aftertirupati.jpg';
+import bharat from '../../assets/Photos/family/bharat.jpg';
+import engagement from '../../assets/Photos/family/engagement.jpg';
+import marriage2 from '../../assets/Photos/family/marriage2.jpg';
+import withmother from '../../assets/Photos/family/withmother.jpg';
 ---
 
 <Layout>
@@ -31,6 +37,37 @@ import Layout from '../../layouts/Layout.astro';
         <p class="text-lg">
           Umesh Chandra was highly respected by his colleagues and friends. Hyderabad City Police Commissioner C.V. Anand remembered him as a senior who guided him during his preparation for the Civil Services Examination. Many officers who served under him fondly recall his leadership and integrity.
         </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="card">
+          <Image src={aftertirupati} alt="After Tirupati" class="w-full h-auto rounded-lg" />
+          <div class="card-body">
+            <p class="card-text">After Tirupati</p>
+          </div>
+        </div>
+        <div class="card">
+          <Image src={bharat} alt="Bharat" class="w-full h-auto rounded-lg" />
+          <div class="card-body">
+            <p class="card-text">Bharat</p>
+          </div>
+        </div>
+        <div class="card">
+          <Image src={engagement} alt="Engagement" class="w-full h-auto rounded-lg" />
+          <div class="card-body">
+            <p class="card-text">Engagement</p>
+          </div>
+        </div>
+        <div class="card">
+          <Image src={marriage2} alt="Marriage" class="w-full h-auto rounded-lg" />
+          <div class="card-body">
+            <p class="card-text">Marriage</p>
+          </div>
+        </div>
+        <div class="card">
+          <Image src={withmother} alt="With Mother" class="w-full h-auto rounded-lg" />
+          <div class="card-body">
+            <p class="card-text">With Mother</p>
+          </div>
+        </div>
       </div>
     </div>
   </main>
