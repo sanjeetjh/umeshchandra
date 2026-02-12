@@ -1,38 +1,25 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+const pressModules = import.meta.glob('../../../assets/Pressclips/*.jpg', { eager: true });
+const aftermathModules = import.meta.glob('../../../assets/Pressclips/Aftermath/*.jpg', { eager: true });
+
+const images = [...Object.values(pressModules), ...Object.values(aftermathModules)];
 ---
 
 <Layout>
   <main>
     <div class="container">
       <h1 class="text-gold">Press Coverage & Tragedy Photos</h1>
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">This section will feature a collection of press clippings and photographs related to the tragic assassination of Mr. Umesh Chandra. The photo gallery is currently being curated and will be updated soon.</p>
-          <div class="row mt-4">
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Photo coming soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Photo coming soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Photo coming soon</p>
-                </div>
-              </div>
+      <div class="row">
+        {images.map(image => (
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <Image src={image.default} class="card-img-top" alt="Press and tragedy photo"/>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   </main>

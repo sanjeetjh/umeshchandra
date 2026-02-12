@@ -1,38 +1,36 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+const cuddapahModules = import.meta.glob('../../../assets/Photos/cuddapah/*.jpg', { eager: true });
+const karimnagarModules = import.meta.glob('../../../assets/Photos/karimnagar/*.jpg', { eager: true });
+const mussoriModules = import.meta.glob('../../../assets/Photos/mussori/*.jpg', { eager: true });
+const npaModules = import.meta.glob('../../../assets/Photos/N.P.A/*.jpg', { eager: true });
+const warangalModules = import.meta.glob('../../../assets/Photos/warangal/*.jpg', { eager: true });
+const hyderabadModules = import.meta.glob('../../../assets/Photos/hyderabad/*.jpg', { eager: true });
+
+const images = [
+  ...Object.values(cuddapahModules),
+  ...Object.values(karimnagarModules),
+  ...Object.values(mussoriModules),
+  ...Object.values(npaModules),
+  ...Object.values(warangalModules),
+  ...Object.values(hyderabadModules)
+];
 ---
 
 <Layout>
   <main>
     <div class="container">
-      <h1 class="text-gold">IPS & Career Photos</h1>
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">This section will feature a collection of photographs from Mr. Umesh Chandra's career in the Indian Police Service. These images will provide a visual record of his various postings and his work as a police officer. The photo gallery is currently being curated and will be updated soon.</p>
-          <div class="row mt-4">
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Photo coming soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Photo coming soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Photo coming soon</p>
-                </div>
-              </div>
+      <h1 class="text-gold">IPS Career Photos</h1>
+      <div class="row">
+        {images.map(image => (
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <Image src={image.default} class="card-img-top" alt="IPS Career photo"/>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   </main>

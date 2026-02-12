@@ -1,5 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const modules = import.meta.glob('../../assets/Video/*.mpg', { eager: true });
+const videoFiles = Object.values(modules);
 ---
 
 <Layout>
@@ -8,22 +11,21 @@ import Layout from '../../layouts/Layout.astro';
       <h1 class="text-gold">Videos</h1>
       <div class="card">
         <div class="card-body">
-          <p class="card-text">This section will feature a collection of videos related to Mr. Umesh Chandra's life and career, including news reports and interviews. The video gallery is currently being curated and will be updated soon.</p>
+          <p class="card-text">This section features a collection of videos related to Mr. Umesh Chandra's life and career.</p>
           <div class="row mt-4">
-            <div class="col-md-6 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Video coming soon</p>
+            {videoFiles.map(video => (
+              <div class="col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p class="card-text">{video.default.split('/').pop().replace('.mpg', '')}</p>
+                    <video controls>
+                      <source src={video.default} type="video/mpeg">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Video coming soon</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

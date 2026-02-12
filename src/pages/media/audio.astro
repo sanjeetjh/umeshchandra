@@ -1,5 +1,8 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const modules = import.meta.glob('../../assets/Audio/*.mp3', { eager: true });
+const audioFiles = Object.values(modules);
 ---
 
 <Layout>
@@ -8,22 +11,21 @@ import Layout from '../../layouts/Layout.astro';
       <h1 class="text-gold">Audio</h1>
       <div class="card">
         <div class="card-body">
-          <p class="card-text">This section will feature a collection of audio clips related to Mr. Umesh Chandra, including speeches and interviews. The audio gallery is currently being curated and will be updated soon.</p>
+          <p class="card-text">This section features a collection of audio clips related to Mr. Umesh Chandra.</p>
           <div class="row mt-4">
-            <div class="col-md-6 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Audio clip coming soon</p>
+            {audioFiles.map(audio => (
+              <div class="col-md-6 mb-4">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <p class="card-text">{audio.default.split('/').pop().replace('.mp3', '')}</p>
+                    <audio controls>
+                      <source src={audio.default} type="audio/mpeg">
+                      Your browser does not support the audio element.
+                    </audio>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Audio clip coming soon</p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

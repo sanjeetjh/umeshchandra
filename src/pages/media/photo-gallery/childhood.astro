@@ -1,38 +1,23 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+const modules = import.meta.glob('../../../assets/Photos/childhood/*.jpg', { eager: true });
+const images = Object.values(modules);
 ---
 
 <Layout>
   <main>
     <div class="container">
       <h1 class="text-gold">Childhood Photos</h1>
-      <div class="card">
-        <div class="card-body">
-          <p class="card-text">This section will feature a collection of photographs from Mr. Umesh Chandra's childhood. These images will offer a glimpse into his early life and upbringing. The photo gallery is currently being curated and will be updated soon.</p>
-          <div class="row mt-4">
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Photo coming soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Photo coming soon</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-4">
-              <div class="card">
-                <div class="card-body text-center">
-                  <p class="card-text">Photo coming soon</p>
-                </div>
-              </div>
+      <div class="row">
+        {images.map(image => (
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <Image src={image.default} class="card-img-top" alt="Childhood photo"/>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   </main>

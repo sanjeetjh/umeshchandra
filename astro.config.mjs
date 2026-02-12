@@ -5,4 +5,7 @@ import { defineConfig } from 'astro/config';
  export default defineConfig({
   site: 'https://sanjeetjh.github.io',
   base: '/umeshchandra',
+  vite: {
+    assetsInclude: ['**/*.mp3', '**/*.mpg'],
+  }
  });
