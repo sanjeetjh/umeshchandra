@@ -1,5 +1,15 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import Adolcampoffice from '../../../assets/Photos/karimnagar/Adolcampoffice.jpg';
+import annualsportsmeetkr2 from '../../../assets/Photos/karimnagar/annualsportsmeetkr2.jpg';
+import armscollectionk from '../../../assets/Photos/karimnagar/armscollectionk.jpg';
+import awardsceremony1 from '../../../assets/Photos/karimnagar/awardsceremony1.jpg';
+import commemerationkr1 from '../../../assets/Photos/karimnagar/commemerationkr1.jpg';
+import cricket3 from '../../../assets/Photos/karimnagar/cricket3.jpg';
+import firingpractice2 from '../../../assets/Photos/karimnagar/firingpractice2.jpg';
+import hallinaguration from '../../../assets/Photos/karimnagar/hallinaguration.jpg';
+import jan1981 from '../../../assets/Photos/karimnagar/jan198-1.jpg';
 ---
 
 <Layout>
@@ -23,7 +33,62 @@ import Layout from '../../../layouts/Layout.astro';
       <div class="card">
         <div class="card-body">
           <h2 class="card-title text-gold">Photo Gallery</h2>
-          <p class="card-text">A collection of photographs from Mr. Umesh Chandra's tenure in Karimnagar will be featured here. These images will provide a visual narrative of his work and impact on the local community.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-3">
+            <div class="card">
+                <Image src={Adolcampoffice} alt="Adol Camp Office" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Adol Camp Office</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={annualsportsmeetkr2} alt="Annual Sports Meet" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Annual Sports Meet</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={armscollectionk} alt="Arms Collection" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Arms Collection</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={awardsceremony1} alt="Awards Ceremony" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Awards Ceremony</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={commemerationkr1} alt="Commemoration" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Commemoration</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={cricket3} alt="Cricket" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Cricket</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={firingpractice2} alt="Firing Practice" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Firing Practice</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={hallinaguration} alt="Hall Inauguration" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Hall Inauguration</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={jan1981} alt="Jan 1981" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Jan 1981</p>
+                </div>
+            </div>
+          </div>
           </div>
       </div>
     </div>

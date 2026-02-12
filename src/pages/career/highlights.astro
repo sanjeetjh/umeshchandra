@@ -1,5 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import armscollection2 from '../../assets/Photos/cuddapah/armscollection2.jpg';
+import annualsportsmeetkr2 from '../../assets/Photos/karimnagar/annualsportsmeetkr2.jpg';
+import cricket1 from '../../assets/Photos/warangal/cricket1.jpg';
+import pulivendlaoffice1 from '../../assets/Photos/cuddapah/pulivendlaoffice1.jpg';
 ---
 
 <Layout>
@@ -19,6 +24,32 @@ import Layout from '../../layouts/Layout.astro';
         <li class="mb-2">Looked after the well-being of all police officials working with him and supported their families in times of need.</li>
         <li class="mb-2">Ensured that election time violence became a thing of the past in all the districts he served.</li>
       </ul>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-5">
+        <div class="card">
+            <Image src={armscollection2} alt="Arms Collection" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Arms Collection</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={annualsportsmeetkr2} alt="Annual Sports Meet" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Annual Sports Meet</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={cricket1} alt="Cricket" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Cricket</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={pulivendlaoffice1} alt="Pulivendla Office" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Pulivendla Office</p>
+            </div>
+        </div>
+      </div>
     </div>
   </main>
 </Layout>

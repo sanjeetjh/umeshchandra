@@ -1,12 +1,63 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import cuddapahfarewell from '../../assets/Photos/cuddapah/cuddapahfarewell.jpg';
+import cuddapahfarewell2 from '../../assets/Photos/cuddapah/cuddapahfarewell2.jpg';
+import cuddapahfarewell3 from '../../assets/Photos/cuddapah/cuddapahfarewell3.jpg';
+import cuddapahfarewell4 from '../../assets/Photos/cuddapah/cuddapahfarewell4.jpg';
+import DIGfarewell from '../../assets/Photos/cuddapah/DIGfarewell.jpg';
+import sawangfarewell from '../../assets/Photos/warangal/sawangfarewell.jpg';
+import rajendranathfarewell from '../../assets/Photos/karimnagar/rajendranathfarewell.jpg';
 ---
 
 <Layout>
   <main>
     <div class="container">
       <h1>Farewell</h1>
-      <p>This page will contain information about the farewell of Umesh Chandra.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5">
+        <div class="card">
+            <Image src={cuddapahfarewell} alt="Cuddapah Farewell" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Cuddapah Farewell</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={cuddapahfarewell2} alt="Cuddapah Farewell 2" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Cuddapah Farewell 2</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={cuddapahfarewell3} alt="Cuddapah Farewell 3" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Cuddapah Farewell 3</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={cuddapahfarewell4} alt="Cuddapah Farewell 4" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Cuddapah Farewell 4</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={DIGfarewell} alt="DIG Farewell" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">DIG Farewell</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={sawangfarewell} alt="Sawang Farewell" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Sawang Farewell</p>
+            </div>
+        </div>
+        <div class="card">
+            <Image src={rajendranathfarewell} alt="Rajendranath Farewell" class="w-full h-auto rounded-lg" />
+            <div class="card-body">
+                <p class="card-text">Rajendranath Farewell</p>
+            </div>
+        </div>
+      </div>
     </div>
   </main>
 </Layout>

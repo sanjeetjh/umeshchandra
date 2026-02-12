@@ -1,5 +1,15 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import cuddapahoffice from '../../../assets/Photos/cuddapah/cuddapahoffice.jpg';
+import floods from '../../../assets/Photos/cuddapah/floods.jpg';
+import functionhall from '../../../assets/Photos/cuddapah/functionhall.jpg';
+import inrajasthan from '../../../assets/Photos/cuddapah/inrajasthan.jpg';
+import jagadeeshmemorial from '../../../assets/Photos/cuddapah/jagadeeshmemorial.jpg';
+import Jan1961 from '../../../assets/Photos/cuddapah/Jan196-1.jpg';
+import policelines from '../../../assets/Photos/cuddapah/policelines.jpg';
+import prodduturkalasamithi from '../../../assets/Photos/cuddapah/prodduturkalasamithi.jpg';
+import pulivendlaoffice1 from '../../../assets/Photos/cuddapah/pulivendlaoffice1.jpg';
 ---
 
 <Layout>
@@ -23,7 +33,62 @@ import Layout from '../../../layouts/Layout.astro';
       <div class="card">
         <div class="card-body">
           <h2 class="card-title text-gold">Photo Gallery</h2>
-          <p class="card-text">A collection of photographs from Mr. Umesh Chandra's tenure in Cuddapah will be featured here. These images will provide a visual narrative of his work and impact on the local community.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-3">
+            <div class="card">
+                <Image src={cuddapahoffice} alt="Cuddapah Office" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Cuddapah Office</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={floods} alt="Floods" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Floods</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={functionhall} alt="Function Hall" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Function Hall</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={inrajasthan} alt="In Rajasthan" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">In Rajasthan</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={jagadeeshmemorial} alt="Jagadeesh Memorial" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Jagadeesh Memorial</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={Jan1961} alt="Jan 1961" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Jan 1961</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={policelines} alt="Police Lines" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Police Lines</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={prodduturkalasamithi} alt="Proddutur Kalasamithi" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Proddutur Kalasamithi</p>
+                </div>
+            </div>
+            <div class="card">
+                <Image src={pulivendlaoffice1} alt="Pulivendla Office" class="w-full h-auto rounded-lg" />
+                <div class="card-body">
+                    <p class="card-text">Pulivendla Office</p>
+                </div>
+            </div>
+          </div>
           </div>
       </div>
     </div>

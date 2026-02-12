@@ -1,14 +1,23 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import armscollection from '../../assets/Photos/cuddapah/armscollection.jpg';
 ---
 
 <Layout>
   <main>
     <div class="container">
-      <h1 class="text-gold">Career of Umesh Chandra</h1>
-      <p>This section of the website is dedicated to the distinguished career of Mr. Umesh Chandra. His journey in the Indian Police Service was marked by bravery, integrity, and a deep commitment to the people he served. Explore the different facets of his career through the following sections:</p>
+      <div class="row items-center">
+        <div class="col-md-8">
+          <h1 class="text-gold">Career of Umesh Chandra</h1>
+          <p>This section of the website is dedicated to the distinguished career of Mr. Umesh Chandra. His journey in the Indian Police Service was marked by bravery, integrity, and a deep commitment to the people he served. Explore the different facets of his career through the following sections:</p>
+        </div>
+        <div class="col-md-4">
+          <Image src={armscollection} alt="Arms Collection" class="img-fluid rounded" />
+        </div>
+      </div>
       
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-md-4 mb-4">
           <div class="card h-100">
             <div class="card-body">

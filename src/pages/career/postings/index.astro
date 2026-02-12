@@ -1,14 +1,23 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import policelines from '../../../assets/Photos/cuddapah/policelines.jpg';
 ---
 
 <Layout>
   <main>
     <div class="container">
-      <h1 class="text-gold">Postings</h1>
-      <p>This section provides an overview of Mr. Umesh Chandra's various postings during his distinguished career in the Indian Police Service. Each posting is a testament to his unwavering commitment to justice and his innovative approach to policing.</p>
+      <div class="row items-center">
+        <div class="col-md-8">
+          <h1 class="text-gold">Postings</h1>
+          <p>This section provides an overview of Mr. Umesh Chandra's various postings during his distinguished career in the Indian Police Service. Each posting is a testament to his unwavering commitment to justice and his innovative approach to policing.</p>
+        </div>
+        <div class="col-md-4">
+          <Image src={policelines} alt="Police Lines" class="img-fluid rounded" />
+        </div>
+      </div>
       
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-md-4 mb-4">
           <div class="card h-100">
             <div class="card-body">
